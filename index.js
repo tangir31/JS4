@@ -7,7 +7,7 @@ let arr = [
     {
         name: "Sardor bl",
         age: 15,
-        isMarried: false
+        isMarried: true
     },
     {
         name: "allaayor",
@@ -17,7 +17,7 @@ let arr = [
     {
         name: "Tangir",
         age: 15,
-        isMarried: false
+        isMarried: true
     },
     {
         name: "Ruslan",
@@ -30,14 +30,17 @@ let arr = [
         isMarried: false
     },
     {
-        name: "",
+        name: "Daler",
         age: 12,
         isMarried: false
     },
 ]
 
-let Married = []
-let Single = []
+let Married = [arr.filter((person) => person.isMarried)];
+let Single = [arr.filter((person) => !person.isMarried)];
+
+console.log(Married)
+console.log(Single)
 
 let average_age = 0
 
